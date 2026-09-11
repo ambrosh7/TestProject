@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <svg class="scene-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6d43c0" />
+            <stop offset="35%" stop-color="#8a4bb8" />
+            <stop offset="70%" stop-color="#c06aa8" />
+            <stop offset="100%" stop-color="#d98bb0" />
+          </linearGradient>
+          <linearGradient id="farMount" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#5c3d88" />
+            <stop offset="100%" stop-color="#6a458c" />
+          </linearGradient>
+          <linearGradient id="midMount" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#463074" />
+            <stop offset="100%" stop-color="#563a80" />
+          </linearGradient>
+          <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f6eefc" />
+            <stop offset="50%" stop-color="#dcc8ee" />
+            <stop offset="100%" stop-color="#c4a8dc" />
+          </linearGradient>
+          <linearGradient id="cabinRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3c2a64" />
+            <stop offset="100%" stop-color="#2a1d4a" />
+          </linearGradient>
+          <linearGradient id="cabinWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#5c3c2c" />
+            <stop offset="100%" stop-color="#3d2418" />
+          </linearGradient>
+          <radialGradient id="windowGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe08a" />
+            <stop offset="80%" stop-color="#f0b42a" />
+            <stop offset="100%" stop-color="#c47a10" />
+          </radialGradient>
+          <filter id="softBlur">
+            <feGaussianBlur stdDeviation="10" />
+          </filter>
+        </defs>
+
+        <rect width="1440" height="900" fill="url(#sky)" />
+
+        <g fill="#d2b4ea" opacity="0.48">
+          <ellipse cx="200" cy="148" rx="92" ry="28" />
+          <ellipse cx="248" cy="136" rx="54" ry="22" />
+          <ellipse cx="158" cy="140" rx="46" ry="18" />
+          <ellipse cx="980" cy="112" rx="112" ry="30" />
+          <ellipse cx="1042" cy="98" rx="60" ry="22" />
+          <ellipse cx="926" cy="104" rx="50" ry="18" />
+          <ellipse cx="1280" cy="150" rx="86" ry="24" />
+          <ellipse cx="1324" cy="138" rx="48" ry="18" />
+        </g>
+
+        <path
+          fill="url(#farMount)"
+          d="M0 430 L170 255 L300 358 L450 208 L610 338 L780 228 L930 348 L1090 238 L1270 358 L1440 278 V520 H0 Z"
+        />
+        <path
+          fill="#d8c8ee"
+          opacity="0.5"
+          d="M170 255 L205 298 L248 278 Z M450 208 L492 262 L540 244 Z M780 228 L818 274 L866 254 Z M1090 238 L1130 284 L1178 266 Z"
+        />
+
+        <path
+          fill="url(#midMount)"
+          d="M-40 505 L130 332 L270 452 L420 302 L580 432 L750 322 L910 452 L1070 312 L1250 442 L1480 342 V565 H-40 Z"
+        />
+        <path
+          fill="#e4d6f4"
+          opacity="0.42"
+          d="M130 332 L168 382 L214 360 Z M420 302 L462 356 L512 336 Z M750 322 L792 372 L842 350 Z M1070 312 L1112 366 L1168 342 Z"
+        />
+
+        <path
+          fill="url(#snow)"
+          d="M0 610 C200 575 340 640 520 605 C720 565 860 650 1060 598 C1220 560 1340 620 1440 588 V900 H0 Z"
+        />
+        <path
+          fill="#efe6f8"
+          opacity="0.55"
+          d="M0 700 C240 650 420 740 680 690 C920 645 1140 740 1440 680 V900 H0 Z"
+        />
+
+        <g transform="translate(1028,508)">
+          <path fill="#35567e" d="M48 8 L8 92 H88 Z" />
+          <path fill="#2e4c74" d="M48 42 L0 132 H96 Z" />
+          <rect x="44" y="132" width="8" height="16" fill="#3a2a22" />
+          <path fill="#e4eef8" d="M48 8 L62 42 L48 36 L40 62 Z" />
+        </g>
+        <g transform="translate(1116,528)">
+          <path fill="#3b658e" d="M38 6 L6 76 H70 Z" />
+          <path fill="#31567c" d="M38 34 L0 108 H76 Z" />
+          <rect x="34" y="108" width="8" height="14" fill="#3a2a22" />
+          <path fill="#dce8f4" d="M38 6 L50 32 L38 28 L32 50 Z" />
+        </g>
+
+        <g transform="translate(1188,430)">
+          <ellipse cx="108" cy="248" rx="150" ry="28" fill="#d7c2ea" opacity="0.8" />
+          <path d="M18 150 H198 V236 Q198 250 184 250 H32 Q18 250 18 236 Z" fill="url(#cabinWall)" />
+          <path d="M4 156 Q108 18 212 156 L192 164 Q108 52 24 164 Z" fill="url(#cabinRoof)" />
+          <path d="M16 154 Q108 42 200 154 Q108 70 16 154 Z" fill="#f4eefb" />
+          <rect x="156" y="56" width="18" height="54" rx="4" fill="#3a2a4a" />
+          <rect x="150" y="48" width="30" height="12" rx="3" fill="#2a1d38" />
+          <ellipse class="smoke" cx="170" cy="34" rx="11" ry="16" fill="#cbb8dc" opacity="0.55" />
+          <ellipse class="smoke delay" cx="186" cy="8" rx="18" ry="20" fill="#d8c8e8" opacity="0.42" />
+          <ellipse class="smoke delay-2" cx="208" cy="-16" rx="24" ry="16" fill="#e4d6f0" opacity="0.32" />
+          <rect x="42" y="176" width="46" height="34" rx="5" fill="url(#windowGlow)" />
+          <rect x="128" y="176" width="46" height="34" rx="5" fill="url(#windowGlow)" />
+          <path d="M65 176 V210 M42 193 H88" stroke="#8a5a14" stroke-width="1.5" />
+          <path d="M151 176 V210 M128 193 H174" stroke="#8a5a14" stroke-width="1.5" />
+          <ellipse cx="65" cy="193" rx="34" ry="24" fill="#ffd56a" opacity="0.28" filter="url(#softBlur)" />
+          <ellipse cx="151" cy="193" rx="34" ry="24" fill="#ffd56a" opacity="0.28" filter="url(#softBlur)" />
+        </g>
+
+        <g transform="translate(20,330)">
+          <path fill="#314e76" d="M170 10 L48 200 H292 Z" />
+          <path fill="#3a5f88" d="M170 110 L28 310 H312 Z" />
+          <path fill="#2a476c" d="M170 210 L8 430 H332 Z" />
+          <rect x="158" y="430" width="24" height="40" fill="#3a2a22" />
+          <path fill="#eef4fb" d="M170 10 C188 48 198 72 204 96 L170 84 L152 132 C160 70 166 36 170 10 Z" />
+          <path fill="#dce7f4" d="M250 318 C278 348 298 388 312 424 L268 412 C250 368 246 338 250 318 Z" />
+        </g>
+        <g transform="translate(210,410) scale(0.84)">
+          <path fill="#3d6a9a" d="M170 10 L48 200 H292 Z" />
+          <path fill="#2f547e" d="M170 110 L28 310 H312 Z" />
+          <path fill="#274a6e" d="M170 210 L8 430 H332 Z" />
+          <rect x="158" y="430" width="24" height="40" fill="#3a2a22" />
+          <path fill="#e8f0fa" d="M170 10 C186 46 194 70 200 92 L170 82 L154 122 C162 68 166 34 170 10 Z" />
+          <path fill="#d4e2f0" d="M246 322 C274 350 292 388 306 422 L266 412 C248 368 244 340 246 322 Z" />
+        </g>
+      </svg>
+    </div>
+
+    <main class="page">
+      <section class="card" id="login-card" aria-labelledby="form-title">
+        <h1 id="form-title">Login</h1>
+
+        <form id="login-form" novalidate>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+
+          <div class="row">
+            <label class="remember">
+              <input type="checkbox" name="remember" />
+              <span>Remember Me</span>
+            </label>
+            <button type="button" class="text-link" id="forgot-btn">Forget Password</button>
+          </div>
+
+          <button type="submit" class="submit">Log in</button>
+        </form>
+
+        <p class="switch">
+          Don't have a account
+          <button type="button" class="text-link strong" id="show-register">Register</button>
+        </p>
+      </section>
+
+      <section class="card hidden" id="register-card" aria-labelledby="register-title">
+        <h1 id="register-title">Register</h1>
+        <form id="register-form" novalidate>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" autocomplete="new-password" required minlength="6" />
+          </label>
+          <label class="field">
+            <span>Confirm Password</span>
+            <input type="password" name="confirm" autocomplete="new-password" required />
+          </label>
+          <button type="submit" class="submit">Create account</button>
+        </form>
+        <p class="switch">
+          Already have an account
+          <button type="button" class="text-link strong" id="show-login">Log in</button>
+        </p>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
